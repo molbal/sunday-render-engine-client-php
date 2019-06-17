@@ -1,6 +1,6 @@
 <?php
 /**
- * LoginResponseTest
+ * IterableProjectEntity_Test
  *
  * PHP version 5
  *
@@ -12,9 +12,9 @@
  */
 
 /**
- * Sunday Archive Service
+ * Sunday Render Service
  *
- * Sunday Archive Service
+ * Sunday Render Service
  *
  * OpenAPI spec version: 0.0.1-SNAPSHOT
  * Contact: molnar.balint@mdy.hu
@@ -42,17 +42,17 @@
 namespace Swagger\Client;
 
 /**
- * LoginResponseTest Class Doc Comment
+ * IterableProjectEntity_Test Class Doc Comment
  *
  * @category    Class */
-// * @description LoginResponse
+// * @description IterableProjectEntity_
 /**
  * @package     Swagger\Client
  * @author      http://github.com/swagger-api/swagger-codegen
  * @license     http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link        https://github.com/swagger-api/swagger-codegen
  */
-class LoginResponseTest extends \PHPUnit_Framework_TestCase
+class IterableProjectEntity_Test extends \PHPUnit_Framework_TestCase
 {
 
     /**
@@ -88,49 +88,9 @@ class LoginResponseTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * Test "LoginResponse"
+     * Test "IterableProjectEntity_"
      */
-    public function testLoginResponse()
-    {
-
-    }
-
-    /**
-     * Test attribute "id"
-     */
-    public function testPropertyId()
-    {
-
-    }
-
-    /**
-     * Test attribute "login_error_message"
-     */
-    public function testPropertyLoginErrorMessage()
-    {
-
-    }
-
-    /**
-     * Test attribute "login_fail_reason"
-     */
-    public function testPropertyLoginFailReason()
-    {
-
-    }
-
-    /**
-     * Test attribute "login_success"
-     */
-    public function testPropertyLoginSuccess()
-    {
-
-    }
-
-    /**
-     * Test attribute "user_type"
-     */
-    public function testPropertyUserType()
+    public function testIterableProjectEntity_()
     {
 
     }

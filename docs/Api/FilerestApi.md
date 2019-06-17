@@ -1,12 +1,13 @@
 # Swagger\Client\FilerestApi
 
-All URIs are relative to *https://127.0.0.1:8009/*
+All URIs are relative to *https://136.144.173.90:8009/*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**createFileEntityUsingPOST**](FilerestApi.md#createFileEntityUsingPOST) | **POST** /file/create | Creates a file
-[**getFileEntityUsingGET**](FilerestApi.md#getFileEntityUsingGET) | **GET** /file/get/{Id} | Returns a file by its ID
-[**getFilesByProjectIdUsingGET**](FilerestApi.md#getFilesByProjectIdUsingGET) | **GET** /file/getbyproject/{projectId} | Returns all file by its project ID
+[**getFileEntityUsingGET**](FilerestApi.md#getFileEntityUsingGET) | **GET** /file/get/{Id} | Gets a file eneity, its metadata read from the database and its contents read from the file storage
+[**getFilesByProjectIdUsingGET**](FilerestApi.md#getFilesByProjectIdUsingGET) | **GET** /file/getbyproject/{projectId} | Gets all file entities by a project. Note, that this operation only queries the database, and not the file contents.
+[**updateFileContentsUsingPOST**](FilerestApi.md#updateFileContentsUsingPOST) | **POST** /file/update | Updates a file
 
 
 # **createFileEntityUsingPOST**
@@ -47,15 +48,15 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: *_/_*
+ - **Content-Type**: application/json;charset=UTF-8
+ - **Accept**: application/json;charset=UTF-8
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getFileEntityUsingGET**
 > \Swagger\Client\Model\FileEntity getFileEntityUsingGET($id)
 
-Returns a file by its ID
+Gets a file eneity, its metadata read from the database and its contents read from the file storage
 
 ### Example
 ```php
@@ -91,14 +92,14 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: *_/_*
+ - **Accept**: application/json;charset=UTF-8
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getFilesByProjectIdUsingGET**
 > \Swagger\Client\Model\FileEntity[] getFilesByProjectIdUsingGET($project_id)
 
-Returns all file by its project ID
+Gets all file entities by a project. Note, that this operation only queries the database, and not the file contents.
 
 ### Example
 ```php
@@ -134,7 +135,50 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: *_/_*
+ - **Accept**: application/json;charset=UTF-8
+
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+
+# **updateFileContentsUsingPOST**
+> \Swagger\Client\Model\FileEntity updateFileContentsUsingPOST($file_to_update)
+
+Updates a file
+
+### Example
+```php
+<?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+$api_instance = new Swagger\Client\Api\FilerestApi();
+$file_to_update = new \Swagger\Client\Model\FileEntity(); // \Swagger\Client\Model\FileEntity | fileToUpdate
+
+try {
+    $result = $api_instance->updateFileContentsUsingPOST($file_to_update);
+    print_r($result);
+} catch (Exception $e) {
+    echo 'Exception when calling FilerestApi->updateFileContentsUsingPOST: ', $e->getMessage(), PHP_EOL;
+}
+?>
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **file_to_update** | [**\Swagger\Client\Model\FileEntity**](../Model/\Swagger\Client\Model\FileEntity.md)| fileToUpdate |
+
+### Return type
+
+[**\Swagger\Client\Model\FileEntity**](../Model/FileEntity.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json;charset=UTF-8
+ - **Accept**: application/json;charset=UTF-8
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 

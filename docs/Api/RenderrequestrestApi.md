@@ -1,6 +1,6 @@
 # Swagger\Client\RenderrequestrestApi
 
-All URIs are relative to *https://127.0.0.1:8009/*
+All URIs are relative to *https://136.144.173.90:8009/*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -45,8 +45,8 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: *_/_*
+ - **Content-Type**: application/json;charset=UTF-8
+ - **Accept**: application/pdf
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 

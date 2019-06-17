@@ -9,6 +9,7 @@ Name | Type | Description | Notes
 **project_id** | **int** | Project ID | [optional] 
 **render_finished** | [**\DateTime**](\DateTime.md) | Date and time the render request was served | [optional] 
 **render_requested** | [**\DateTime**](\DateTime.md) | Date and time the render request was received | [optional] 
+**render_target** | **string** | Render target. | [optional] 
 **rendered_by** | **string** | Name of entity who sent the request | [optional] 
 **rendered_duration** | **int** | The time it took do do the rendering (including verifying and generating files, excluding waiting for free thread) | [optional] 
 

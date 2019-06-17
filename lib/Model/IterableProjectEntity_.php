@@ -1,6 +1,6 @@
 <?php
 /**
- * NewUserRequest
+ * IterableProjectEntity_
  *
  * PHP version 5
  *
@@ -12,9 +12,9 @@
  */
 
 /**
- * Sunday Archive Service
+ * Sunday Render Service
  *
- * Sunday Archive Service
+ * Sunday Render Service
  *
  * OpenAPI spec version: 0.0.1-SNAPSHOT
  * Contact: molnar.balint@mdy.hu
@@ -44,7 +44,7 @@ namespace Swagger\Client\Model;
 use \ArrayAccess;
 
 /**
- * NewUserRequest Class Doc Comment
+ * IterableProjectEntity_ Class Doc Comment
  *
  * @category    Class */
 /** 
@@ -53,21 +53,20 @@ use \ArrayAccess;
  * @license     http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link        https://github.com/swagger-api/swagger-codegen
  */
-class NewUserRequest implements ArrayAccess
+class IterableProjectEntity_ implements ArrayAccess
 {
     /**
       * The original name of the model.
       * @var string
       */
-    protected static $swaggerModelName = 'NewUserRequest';
+    protected static $swaggerModelName = 'Iterable«ProjectEntity»';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
       * @var string[]
       */
     protected static $swaggerTypes = array(
-        'email' => 'string',
-        'password' => 'string'
+        
     );
 
     public static function swaggerTypes()
@@ -80,8 +79,7 @@ class NewUserRequest implements ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = array(
-        'email' => 'email',
-        'password' => 'password'
+        
     );
 
     public static function attributeMap()
@@ -94,8 +92,7 @@ class NewUserRequest implements ArrayAccess
      * @var string[]
      */
     protected static $setters = array(
-        'email' => 'setEmail',
-        'password' => 'setPassword'
+        
     );
 
     public static function setters()
@@ -108,8 +105,7 @@ class NewUserRequest implements ArrayAccess
      * @var string[]
      */
     protected static $getters = array(
-        'email' => 'getEmail',
-        'password' => 'getPassword'
+        
     );
 
     public static function getters()
@@ -133,8 +129,6 @@ class NewUserRequest implements ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['email'] = isset($data['email']) ? $data['email'] : null;
-        $this->container['password'] = isset($data['password']) ? $data['password'] : null;
     }
 
     /**
@@ -159,48 +153,6 @@ class NewUserRequest implements ArrayAccess
         return true;
     }
 
-
-    /**
-     * Gets email
-     * @return string
-     */
-    public function getEmail()
-    {
-        return $this->container['email'];
-    }
-
-    /**
-     * Sets email
-     * @param string $email
-     * @return $this
-     */
-    public function setEmail($email)
-    {
-        $this->container['email'] = $email;
-
-        return $this;
-    }
-
-    /**
-     * Gets password
-     * @return string
-     */
-    public function getPassword()
-    {
-        return $this->container['password'];
-    }
-
-    /**
-     * Sets password
-     * @param string $password
-     * @return $this
-     */
-    public function setPassword($password)
-    {
-        $this->container['password'] = $password;
-
-        return $this;
-    }
     /**
      * Returns true if offset exists. False otherwise.
      * @param  integer $offset Offset
