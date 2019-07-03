@@ -1,4 +1,4 @@
-# Swagger\Client\ProjectrestApi
+# Sunday\RenderService\Client\ProjectrestApi
 
 All URIs are relative to *https://136.144.173.90:8009/*
 
@@ -21,7 +21,7 @@ Deletes a project, its document types, and its files.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new Swagger\Client\Api\ProjectrestApi();
+$api_instance = new Sunday\RenderService\Client\Api\ProjectrestApi();
 $id = 789; // int | Id
 
 try {
@@ -63,7 +63,7 @@ Returns all projects
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new Swagger\Client\Api\ProjectrestApi();
+$api_instance = new Sunday\RenderService\Client\Api\ProjectrestApi();
 
 try {
     $result = $api_instance->getAllProjectsUsingGET();
@@ -102,7 +102,7 @@ Gets a project by its ID
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new Swagger\Client\Api\ProjectrestApi();
+$api_instance = new Sunday\RenderService\Client\Api\ProjectrestApi();
 $id = 789; // int | Id
 
 try {
@@ -145,7 +145,7 @@ Creates a new project. The ID does not need to be filled, as it is generated aut
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new Swagger\Client\Api\ProjectrestApi();
+$api_instance = new Sunday\RenderService\Client\Api\ProjectrestApi();
 $project = new \Swagger\Client\Model\ProjectEntity(); // \Swagger\Client\Model\ProjectEntity | project
 
 try {
@@ -188,7 +188,7 @@ Updates a project.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new Swagger\Client\Api\ProjectrestApi();
+$api_instance = new Sunday\RenderService\Client\Api\ProjectrestApi();
 $id = 789; // int | Id
 $project = new \Swagger\Client\Model\ProjectEntity(); // \Swagger\Client\Model\ProjectEntity | project
 
