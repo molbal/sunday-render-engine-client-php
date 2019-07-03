@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Sunday\RenderService\Client
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -38,18 +38,18 @@
  * Please update the test case below to test the endpoint.
  */
 
-namespace Swagger\Client;
+namespace Sunday\RenderService\Client;
 
-use \Swagger\Client\Configuration;
-use \Swagger\Client\ApiClient;
-use \Swagger\Client\ApiException;
-use \Swagger\Client\ObjectSerializer;
+use \Sunday\RenderService\Client\Configuration;
+use \Sunday\RenderService\Client\ApiClient;
+use \Sunday\RenderService\Client\ApiException;
+use \Sunday\RenderService\Client\ObjectSerializer;
 
 /**
  * RenderrequestrestApiTest Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Sunday\RenderService\Client
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link     https://github.com/swagger-api/swagger-codegen
