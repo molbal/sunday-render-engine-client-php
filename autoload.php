@@ -26,10 +26,10 @@
  * An example of a project-specific implementation.
  *
  * After registering this autoload function with SPL, the following line
- * would cause the function to attempt to load the \Sunday\RenderService\Client\Baz\Qux class
+ * would cause the function to attempt to load the \Swagger\Client\Baz\Qux class
  * from /path/to/project/lib/Baz/Qux.php:
  *
- *      new \Sunday\RenderService\Client\Baz\Qux;
+ *      new \Swagger\Client\Baz\Qux;
  *
  * @param string $class The fully-qualified class name.
  *
@@ -38,7 +38,7 @@
 spl_autoload_register(function ($class) {
 
     // project-specific namespace prefix
-    $prefix = 'Sunday\\RenderService\\Client\\';
+    $prefix = 'Swagger\\Client\\';
 
     // base directory for the namespace prefix
     $base_dir = __DIR__ . '/lib/';

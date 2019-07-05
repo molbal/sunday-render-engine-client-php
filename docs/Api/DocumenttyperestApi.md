@@ -1,4 +1,4 @@
-# Sunday\RenderService\Client\DocumenttyperestApi
+# Swagger\Client\DocumenttyperestApi
 
 All URIs are relative to *https://136.144.173.90:8009/*
 
@@ -21,7 +21,7 @@ Deletes a document type
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new Sunday\RenderService\Client\Api\DocumenttyperestApi();
+$api_instance = new Swagger\Client\Api\DocumenttyperestApi();
 $id = 789; // int | Id
 
 try {
@@ -63,7 +63,7 @@ Returns the document type entity by the ID
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new Sunday\RenderService\Client\Api\DocumenttyperestApi();
+$api_instance = new Swagger\Client\Api\DocumenttyperestApi();
 $id = 789; // int | Id
 
 try {
@@ -106,7 +106,7 @@ Returns a list of document type entities by their project id
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new Sunday\RenderService\Client\Api\DocumenttyperestApi();
+$api_instance = new Swagger\Client\Api\DocumenttyperestApi();
 $project_entity_id = 789; // int | projectEntityId
 
 try {
@@ -149,7 +149,7 @@ insertDocumentType
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new Sunday\RenderService\Client\Api\DocumenttyperestApi();
+$api_instance = new Swagger\Client\Api\DocumenttyperestApi();
 $document_type_entity = new \Swagger\Client\Model\DocumentTypeEntity(); // \Swagger\Client\Model\DocumentTypeEntity | documentTypeEntity
 
 try {
@@ -192,7 +192,7 @@ Updates an existing document type
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new Sunday\RenderService\Client\Api\DocumenttyperestApi();
+$api_instance = new Swagger\Client\Api\DocumenttyperestApi();
 $id = 789; // int | Id
 $document_type_entity = new \Swagger\Client\Model\DocumentTypeEntity(); // \Swagger\Client\Model\DocumentTypeEntity | documentTypeEntity
 
