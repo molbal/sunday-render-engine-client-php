@@ -67,6 +67,7 @@ class RenderRequestEntity implements ArrayAccess
       */
     protected static $swaggerTypes = array(
         'document_type_id' => 'int',
+        'extra_engine_parameters' => 'string',
         'id' => 'int',
         'keywords' => 'map[string,string]',
         'project_id' => 'int',
@@ -88,6 +89,7 @@ class RenderRequestEntity implements ArrayAccess
      */
     protected static $attributeMap = array(
         'document_type_id' => 'documentTypeId',
+        'extra_engine_parameters' => 'extraEngineParameters',
         'id' => 'id',
         'keywords' => 'keywords',
         'project_id' => 'projectId',
@@ -109,6 +111,7 @@ class RenderRequestEntity implements ArrayAccess
      */
     protected static $setters = array(
         'document_type_id' => 'setDocumentTypeId',
+        'extra_engine_parameters' => 'setExtraEngineParameters',
         'id' => 'setId',
         'keywords' => 'setKeywords',
         'project_id' => 'setProjectId',
@@ -130,6 +133,7 @@ class RenderRequestEntity implements ArrayAccess
      */
     protected static $getters = array(
         'document_type_id' => 'getDocumentTypeId',
+        'extra_engine_parameters' => 'getExtraEngineParameters',
         'id' => 'getId',
         'keywords' => 'getKeywords',
         'project_id' => 'getProjectId',
@@ -176,6 +180,7 @@ class RenderRequestEntity implements ArrayAccess
     public function __construct(array $data = null)
     {
         $this->container['document_type_id'] = isset($data['document_type_id']) ? $data['document_type_id'] : null;
+        $this->container['extra_engine_parameters'] = isset($data['extra_engine_parameters']) ? $data['extra_engine_parameters'] : null;
         $this->container['id'] = isset($data['id']) ? $data['id'] : null;
         $this->container['keywords'] = isset($data['keywords']) ? $data['keywords'] : null;
         $this->container['project_id'] = isset($data['project_id']) ? $data['project_id'] : null;
@@ -235,6 +240,27 @@ class RenderRequestEntity implements ArrayAccess
     public function setDocumentTypeId($document_type_id)
     {
         $this->container['document_type_id'] = $document_type_id;
+
+        return $this;
+    }
+
+    /**
+     * Gets extra_engine_parameters
+     * @return string
+     */
+    public function getExtraEngineParameters()
+    {
+        return $this->container['extra_engine_parameters'];
+    }
+
+    /**
+     * Sets extra_engine_parameters
+     * @param string $extra_engine_parameters Extra WKHTMLTOPDF engine parameters, seen here: https://wkhtmltopdf.org/usage/wkhtmltopdf.txt
+     * @return $this
+     */
+    public function setExtraEngineParameters($extra_engine_parameters)
+    {
+        $this->container['extra_engine_parameters'] = $extra_engine_parameters;
 
         return $this;
     }

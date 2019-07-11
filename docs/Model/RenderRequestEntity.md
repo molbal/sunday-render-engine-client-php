@@ -4,6 +4,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **document_type_id** | **int** | Document ID | [optional] 
+**extra_engine_parameters** | **string** | Extra WKHTMLTOPDF engine parameters, seen here: https://wkhtmltopdf.org/usage/wkhtmltopdf.txt | [optional] 
 **id** | **int** | Unique identifier. Unique amongst render requests, but not other objects. | [optional] 
 **keywords** | **map[string,string]** | List of keyword keys and values | [optional] 
 **project_id** | **int** | Project ID | [optional] 
