@@ -4,16 +4,16 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Sunday\ArchiveClient
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link     https://github.com/swagger-api/swagger-codegen
  */
 
 /**
- * Sunday Render Service
+ * Sunday Archive Service
  *
- * Sunday Render Service
+ * Sunday Archive Service
  *
  * OpenAPI spec version: 0.0.1-SNAPSHOT
  * Contact: molnar.balint@mdy.hu
@@ -38,7 +38,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client;
+namespace Sunday\ArchiveClient;
 
 use \Exception;
 
@@ -46,7 +46,7 @@ use \Exception;
  * ApiException Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Sunday\ArchiveClient
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link     https://github.com/swagger-api/swagger-codegen

@@ -1,5 +1,6 @@
 {
-    "name": "molbal/sunday-render-engine-client-php",
+    "name": "molbal/sunday-archive-engine-client-php",
+    "version": "1.0.67",
     "description": "",
     "keywords": [
         "swagger",
@@ -27,9 +28,9 @@
         "squizlabs/php_codesniffer": "~2.6"
     },
     "autoload": {
-        "psr-4": { "Swagger\\Client\\" : "lib/" }
+        "psr-4": { "Sunday\\ArchiveClient\\" : "lib/" }
     },
     "autoload-dev": {
-        "psr-4": { "Swagger\\Client\\" : "test/" }
+        "psr-4": { "Sunday\\ArchiveClient\\" : "test/" }
     }
 }

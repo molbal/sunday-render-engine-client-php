@@ -1,9 +1,9 @@
 <?php
 
 /**
- * Sunday Render Service
+ * Sunday Archive Service
  *
- * Sunday Render Service
+ * Sunday Archive Service
  *
  * OpenAPI spec version: 0.0.1-SNAPSHOT
  * Contact: molnar.balint@mdy.hu
@@ -26,10 +26,10 @@
  * An example of a project-specific implementation.
  *
  * After registering this autoload function with SPL, the following line
- * would cause the function to attempt to load the \Swagger\Client\Baz\Qux class
+ * would cause the function to attempt to load the \Sunday\ArchiveClient\Baz\Qux class
  * from /path/to/project/lib/Baz/Qux.php:
  *
- *      new \Swagger\Client\Baz\Qux;
+ *      new \Sunday\ArchiveClient\Baz\Qux;
  *
  * @param string $class The fully-qualified class name.
  *
@@ -38,7 +38,7 @@
 spl_autoload_register(function ($class) {
 
     // project-specific namespace prefix
-    $prefix = 'Swagger\\Client\\';
+    $prefix = 'Sunday\\ArchiveClient\\';
 
     // base directory for the namespace prefix
     $base_dir = __DIR__ . '/lib/';
