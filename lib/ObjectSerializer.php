@@ -5,16 +5,16 @@
  * PHP version 5
  *
  * @category Class
- * @package  Sunday\ArchiveClient
+ * @package  Swagger\Client
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link     https://github.com/swagger-api/swagger-codegen
  */
 
 /**
- * Sunday Archive Service
+ * Sunday Render Service
  *
- * Sunday Archive Service
+ * Sunday Render Service
  *
  * OpenAPI spec version: 0.0.1-SNAPSHOT
  * Contact: molnar.balint@mdy.hu
@@ -39,13 +39,13 @@
  * Do not edit the class manually.
  */
 
-namespace Sunday\ArchiveClient;
+namespace Swagger\Client;
 
 /**
  * ObjectSerializer Class Doc Comment
  *
  * @category Class
- * @package  Sunday\ArchiveClient
+ * @package  Swagger\Client
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -286,7 +286,7 @@ class ObjectSerializer
         } else {
             // If a discriminator is defined and points to a valid subclass, use it.
             if (!empty($discriminator) && isset($data->{$discriminator}) && is_string($data->{$discriminator})) {
-                $subclass = '\Sunday\ArchiveClient\Model\\' . $data->{$discriminator};
+                $subclass = '\Swagger\Client\Model\\' . $data->{$discriminator};
                 if (is_subclass_of($subclass, $class)) {
                     $class = $subclass;
                 }
