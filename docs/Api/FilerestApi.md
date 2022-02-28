@@ -1,6 +1,6 @@
-# Swagger\Client\FilerestApi
+# Sunday\RenderClient\FilerestApi
 
-All URIs are relative to *https://136.144.173.90:8009/*
+All URIs are relative to *https://sdy-as-01:8009/*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -20,7 +20,7 @@ Creates a file
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new Swagger\Client\Api\FilerestApi();
+$api_instance = new Sunday\RenderClient\Api\FilerestApi();
 $file_to_create = new \Swagger\Client\Model\FileEntity(); // \Swagger\Client\Model\FileEntity | fileToCreate
 
 try {
@@ -63,7 +63,7 @@ Gets a file eneity, its metadata read from the database and its contents read fr
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new Swagger\Client\Api\FilerestApi();
+$api_instance = new Sunday\RenderClient\Api\FilerestApi();
 $id = 789; // int | Id
 
 try {
@@ -106,7 +106,7 @@ Gets all file entities by a project. Note, that this operation only queries the 
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new Swagger\Client\Api\FilerestApi();
+$api_instance = new Sunday\RenderClient\Api\FilerestApi();
 $project_id = 789; // int | projectId
 
 try {
@@ -149,7 +149,7 @@ Updates a file
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new Swagger\Client\Api\FilerestApi();
+$api_instance = new Sunday\RenderClient\Api\FilerestApi();
 $file_to_update = new \Swagger\Client\Model\FileEntity(); // \Swagger\Client\Model\FileEntity | fileToUpdate
 
 try {

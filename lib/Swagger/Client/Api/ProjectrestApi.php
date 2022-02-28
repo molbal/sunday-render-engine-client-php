@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Sunday\RenderService\Client
+ * @package  Sunday\RenderClient
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -40,16 +40,16 @@
 
 namespace Swagger\Client\Api;
 
-use \Sunday\RenderService\Client\Configuration;
-use \Sunday\RenderService\Client\ApiClient;
-use \Sunday\RenderService\Client\ApiException;
-use \Sunday\RenderService\Client\ObjectSerializer;
+use \Sunday\RenderClient\Configuration;
+use \Sunday\RenderClient\ApiClient;
+use \Sunday\RenderClient\ApiException;
+use \Sunday\RenderClient\ObjectSerializer;
 
 /**
  * ProjectrestApi Class Doc Comment
  *
  * @category Class
- * @package  Sunday\RenderService\Client
+ * @package  Sunday\RenderClient
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -60,20 +60,20 @@ class ProjectrestApi
     /**
      * API Client
      *
-     * @var \Sunday\RenderService\Client\ApiClient instance of the ApiClient
+     * @var \Sunday\RenderClient\ApiClient instance of the ApiClient
      */
     protected $apiClient;
 
     /**
      * Constructor
      *
-     * @param \Sunday\RenderService\Client\ApiClient|null $apiClient The api client to use
+     * @param \Sunday\RenderClient\ApiClient|null $apiClient The api client to use
      */
-    public function __construct(\Sunday\RenderService\Client\ApiClient $apiClient = null)
+    public function __construct(\Sunday\RenderClient\ApiClient $apiClient = null)
     {
         if ($apiClient == null) {
             $apiClient = new ApiClient();
-            $apiClient->getConfig()->setHost('https://136.144.173.90:8009/');
+            $apiClient->getConfig()->setHost('https://sdy-as-01:8009/');
         }
 
         $this->apiClient = $apiClient;
@@ -82,7 +82,7 @@ class ProjectrestApi
     /**
      * Get API client
      *
-     * @return \Sunday\RenderService\Client\ApiClient get the API client
+     * @return \Sunday\RenderClient\ApiClient get the API client
      */
     public function getApiClient()
     {
@@ -92,11 +92,11 @@ class ProjectrestApi
     /**
      * Set the API client
      *
-     * @param \Sunday\RenderService\Client\ApiClient $apiClient set the API client
+     * @param \Sunday\RenderClient\ApiClient $apiClient set the API client
      *
      * @return ProjectrestApi
      */
-    public function setApiClient(\Sunday\RenderService\Client\ApiClient $apiClient)
+    public function setApiClient(\Sunday\RenderClient\ApiClient $apiClient)
     {
         $this->apiClient = $apiClient;
         return $this;
@@ -109,7 +109,7 @@ class ProjectrestApi
      *
      * @param int $id Id (required)
      * @return void
-     * @throws \Sunday\RenderService\Client\ApiException on non-2xx response
+     * @throws \Sunday\RenderClient\ApiException on non-2xx response
      */
     public function deleteProjectUsingDELETE($id)
     {
@@ -124,7 +124,7 @@ class ProjectrestApi
      *
      * @param int $id Id (required)
      * @return Array of null, HTTP status code, HTTP response headers (array of strings)
-     * @throws \Sunday\RenderService\Client\ApiException on non-2xx response
+     * @throws \Sunday\RenderClient\ApiException on non-2xx response
      */
     public function deleteProjectUsingDELETEWithHttpInfo($id)
     {
@@ -189,7 +189,7 @@ class ProjectrestApi
      * Returns all projects
      *
      * @return \Swagger\Client\Model\IterableProjectEntity_
-     * @throws \Sunday\RenderService\Client\ApiException on non-2xx response
+     * @throws \Sunday\RenderClient\ApiException on non-2xx response
      */
     public function getAllProjectsUsingGET()
     {
@@ -203,7 +203,7 @@ class ProjectrestApi
      * Returns all projects
      *
      * @return Array of \Swagger\Client\Model\IterableProjectEntity_, HTTP status code, HTTP response headers (array of strings)
-     * @throws \Sunday\RenderService\Client\ApiException on non-2xx response
+     * @throws \Sunday\RenderClient\ApiException on non-2xx response
      */
     public function getAllProjectsUsingGETWithHttpInfo()
     {
@@ -261,7 +261,7 @@ class ProjectrestApi
      *
      * @param int $id Id (required)
      * @return \Swagger\Client\Model\ProjectEntity
-     * @throws \Sunday\RenderService\Client\ApiException on non-2xx response
+     * @throws \Sunday\RenderClient\ApiException on non-2xx response
      */
     public function getProjectByIdUsingGET($id)
     {
@@ -276,7 +276,7 @@ class ProjectrestApi
      *
      * @param int $id Id (required)
      * @return Array of \Swagger\Client\Model\ProjectEntity, HTTP status code, HTTP response headers (array of strings)
-     * @throws \Sunday\RenderService\Client\ApiException on non-2xx response
+     * @throws \Sunday\RenderClient\ApiException on non-2xx response
      */
     public function getProjectByIdUsingGETWithHttpInfo($id)
     {
@@ -346,7 +346,7 @@ class ProjectrestApi
      *
      * @param \Swagger\Client\Model\ProjectEntity $project project (required)
      * @return \Swagger\Client\Model\ProjectEntity
-     * @throws \Sunday\RenderService\Client\ApiException on non-2xx response
+     * @throws \Sunday\RenderClient\ApiException on non-2xx response
      */
     public function insertProjectUsingPOST($project)
     {
@@ -361,7 +361,7 @@ class ProjectrestApi
      *
      * @param \Swagger\Client\Model\ProjectEntity $project project (required)
      * @return Array of \Swagger\Client\Model\ProjectEntity, HTTP status code, HTTP response headers (array of strings)
-     * @throws \Sunday\RenderService\Client\ApiException on non-2xx response
+     * @throws \Sunday\RenderClient\ApiException on non-2xx response
      */
     public function insertProjectUsingPOSTWithHttpInfo($project)
     {
@@ -429,7 +429,7 @@ class ProjectrestApi
      * @param int $id Id (required)
      * @param \Swagger\Client\Model\ProjectEntity $project project (required)
      * @return \Swagger\Client\Model\ProjectEntity
-     * @throws \Sunday\RenderService\Client\ApiException on non-2xx response
+     * @throws \Sunday\RenderClient\ApiException on non-2xx response
      */
     public function updateProjectUsingPOST($id, $project)
     {
@@ -445,7 +445,7 @@ class ProjectrestApi
      * @param int $id Id (required)
      * @param \Swagger\Client\Model\ProjectEntity $project project (required)
      * @return Array of \Swagger\Client\Model\ProjectEntity, HTTP status code, HTTP response headers (array of strings)
-     * @throws \Sunday\RenderService\Client\ApiException on non-2xx response
+     * @throws \Sunday\RenderClient\ApiException on non-2xx response
      */
     public function updateProjectUsingPOSTWithHttpInfo($id, $project)
     {

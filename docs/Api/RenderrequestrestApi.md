@@ -1,6 +1,6 @@
-# Swagger\Client\RenderrequestrestApi
+# Sunday\RenderClient\RenderrequestrestApi
 
-All URIs are relative to *https://136.144.173.90:8009/*
+All URIs are relative to *https://sdy-as-01:8009/*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -17,7 +17,7 @@ Handles a render request and returns
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new Swagger\Client\Api\RenderrequestrestApi();
+$api_instance = new Sunday\RenderClient\Api\RenderrequestrestApi();
 $render_request_entity = new \Swagger\Client\Model\RenderRequestEntity(); // \Swagger\Client\Model\RenderRequestEntity | renderRequestEntity
 
 try {

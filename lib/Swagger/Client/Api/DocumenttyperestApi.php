@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Sunday\RenderService\Client
+ * @package  Sunday\RenderClient
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -40,16 +40,16 @@
 
 namespace Swagger\Client\Api;
 
-use \Sunday\RenderService\Client\Configuration;
-use \Sunday\RenderService\Client\ApiClient;
-use \Sunday\RenderService\Client\ApiException;
-use \Sunday\RenderService\Client\ObjectSerializer;
+use \Sunday\RenderClient\Configuration;
+use \Sunday\RenderClient\ApiClient;
+use \Sunday\RenderClient\ApiException;
+use \Sunday\RenderClient\ObjectSerializer;
 
 /**
  * DocumenttyperestApi Class Doc Comment
  *
  * @category Class
- * @package  Sunday\RenderService\Client
+ * @package  Sunday\RenderClient
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -60,20 +60,20 @@ class DocumenttyperestApi
     /**
      * API Client
      *
-     * @var \Sunday\RenderService\Client\ApiClient instance of the ApiClient
+     * @var \Sunday\RenderClient\ApiClient instance of the ApiClient
      */
     protected $apiClient;
 
     /**
      * Constructor
      *
-     * @param \Sunday\RenderService\Client\ApiClient|null $apiClient The api client to use
+     * @param \Sunday\RenderClient\ApiClient|null $apiClient The api client to use
      */
-    public function __construct(\Sunday\RenderService\Client\ApiClient $apiClient = null)
+    public function __construct(\Sunday\RenderClient\ApiClient $apiClient = null)
     {
         if ($apiClient == null) {
             $apiClient = new ApiClient();
-            $apiClient->getConfig()->setHost('https://136.144.173.90:8009/');
+            $apiClient->getConfig()->setHost('https://sdy-as-01:8009/');
         }
 
         $this->apiClient = $apiClient;
@@ -82,7 +82,7 @@ class DocumenttyperestApi
     /**
      * Get API client
      *
-     * @return \Sunday\RenderService\Client\ApiClient get the API client
+     * @return \Sunday\RenderClient\ApiClient get the API client
      */
     public function getApiClient()
     {
@@ -92,11 +92,11 @@ class DocumenttyperestApi
     /**
      * Set the API client
      *
-     * @param \Sunday\RenderService\Client\ApiClient $apiClient set the API client
+     * @param \Sunday\RenderClient\ApiClient $apiClient set the API client
      *
      * @return DocumenttyperestApi
      */
-    public function setApiClient(\Sunday\RenderService\Client\ApiClient $apiClient)
+    public function setApiClient(\Sunday\RenderClient\ApiClient $apiClient)
     {
         $this->apiClient = $apiClient;
         return $this;
@@ -109,7 +109,7 @@ class DocumenttyperestApi
      *
      * @param int $id Id (required)
      * @return void
-     * @throws \Sunday\RenderService\Client\ApiException on non-2xx response
+     * @throws \Sunday\RenderClient\ApiException on non-2xx response
      */
     public function deleteDocumentTypeUsingDELETE($id)
     {
@@ -124,7 +124,7 @@ class DocumenttyperestApi
      *
      * @param int $id Id (required)
      * @return Array of null, HTTP status code, HTTP response headers (array of strings)
-     * @throws \Sunday\RenderService\Client\ApiException on non-2xx response
+     * @throws \Sunday\RenderClient\ApiException on non-2xx response
      */
     public function deleteDocumentTypeUsingDELETEWithHttpInfo($id)
     {
@@ -190,7 +190,7 @@ class DocumenttyperestApi
      *
      * @param int $id Id (required)
      * @return \Swagger\Client\Model\DocumentTypeEntity
-     * @throws \Sunday\RenderService\Client\ApiException on non-2xx response
+     * @throws \Sunday\RenderClient\ApiException on non-2xx response
      */
     public function getDocumentTypeByIdUsingGET($id)
     {
@@ -205,7 +205,7 @@ class DocumenttyperestApi
      *
      * @param int $id Id (required)
      * @return Array of \Swagger\Client\Model\DocumentTypeEntity, HTTP status code, HTTP response headers (array of strings)
-     * @throws \Sunday\RenderService\Client\ApiException on non-2xx response
+     * @throws \Sunday\RenderClient\ApiException on non-2xx response
      */
     public function getDocumentTypeByIdUsingGETWithHttpInfo($id)
     {
@@ -275,7 +275,7 @@ class DocumenttyperestApi
      *
      * @param int $project_entity_id projectEntityId (required)
      * @return \Swagger\Client\Model\DocumentTypeEntity[]
-     * @throws \Sunday\RenderService\Client\ApiException on non-2xx response
+     * @throws \Sunday\RenderClient\ApiException on non-2xx response
      */
     public function getDocumentTypesByProjectIdUsingGET($project_entity_id)
     {
@@ -290,7 +290,7 @@ class DocumenttyperestApi
      *
      * @param int $project_entity_id projectEntityId (required)
      * @return Array of \Swagger\Client\Model\DocumentTypeEntity[], HTTP status code, HTTP response headers (array of strings)
-     * @throws \Sunday\RenderService\Client\ApiException on non-2xx response
+     * @throws \Sunday\RenderClient\ApiException on non-2xx response
      */
     public function getDocumentTypesByProjectIdUsingGETWithHttpInfo($project_entity_id)
     {
@@ -360,7 +360,7 @@ class DocumenttyperestApi
      *
      * @param \Swagger\Client\Model\DocumentTypeEntity $document_type_entity documentTypeEntity (required)
      * @return \Swagger\Client\Model\DocumentTypeEntity
-     * @throws \Sunday\RenderService\Client\ApiException on non-2xx response
+     * @throws \Sunday\RenderClient\ApiException on non-2xx response
      */
     public function insertDocumentTypeUsingPOST($document_type_entity)
     {
@@ -375,7 +375,7 @@ class DocumenttyperestApi
      *
      * @param \Swagger\Client\Model\DocumentTypeEntity $document_type_entity documentTypeEntity (required)
      * @return Array of \Swagger\Client\Model\DocumentTypeEntity, HTTP status code, HTTP response headers (array of strings)
-     * @throws \Sunday\RenderService\Client\ApiException on non-2xx response
+     * @throws \Sunday\RenderClient\ApiException on non-2xx response
      */
     public function insertDocumentTypeUsingPOSTWithHttpInfo($document_type_entity)
     {
@@ -443,7 +443,7 @@ class DocumenttyperestApi
      * @param int $id Id (required)
      * @param \Swagger\Client\Model\DocumentTypeEntity $document_type_entity documentTypeEntity (required)
      * @return \Swagger\Client\Model\DocumentTypeEntity
-     * @throws \Sunday\RenderService\Client\ApiException on non-2xx response
+     * @throws \Sunday\RenderClient\ApiException on non-2xx response
      */
     public function updateDocumentTypeUsingPOST($id, $document_type_entity)
     {
@@ -459,7 +459,7 @@ class DocumenttyperestApi
      * @param int $id Id (required)
      * @param \Swagger\Client\Model\DocumentTypeEntity $document_type_entity documentTypeEntity (required)
      * @return Array of \Swagger\Client\Model\DocumentTypeEntity, HTTP status code, HTTP response headers (array of strings)
-     * @throws \Sunday\RenderService\Client\ApiException on non-2xx response
+     * @throws \Sunday\RenderClient\ApiException on non-2xx response
      */
     public function updateDocumentTypeUsingPOSTWithHttpInfo($id, $document_type_entity)
     {
